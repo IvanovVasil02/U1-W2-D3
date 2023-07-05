@@ -253,25 +253,17 @@ console.log(characters.length);
 */
 let randomCharacter = starWarsCharacters[Math.floor(Math.random() * 10)];
 
-let infoChar =
-	"name: " +
-	randomCharacter.name +
-	"; Height: " +
-	randomCharacter.height +
-	"; mass: " +
-	randomCharacter.mass +
-	"; hair_color" +
-	randomCharacter.hair_color +
-	"; skink_color: " +
-	randomCharacter.skin_color +
-	"; eye_color: " +
-	randomCharacter.eye_color +
-	"; birt_year: " +
-	randomCharacter.birth_year +
-	"; gender: " +
-	randomCharacter.gender;
-
-const contInfo = [];
-contInfo.push(infoChar);
-
-console.log(contInfo.join());
+console.log(
+	"Hi Im: " +
+		randomCharacter.name +
+		", I was born in" +
+		randomCharacter.birth_year +
+		", I am " +
+		randomCharacter.height +
+		"cm tall" +
+		"and I weigh " +
+		randomCharacter.mass +
+		"kg and one last detail of me is my " +
+		randomCharacter.eye_color +
+		" eyes"
+);
